@@ -46,6 +46,7 @@ public class WizardsDemoApplication extends UI implements
         wizard.addListener(this);
         wizard.addStep(new IntroStep(), "intro");
         wizard.addStep(new SetupStep(), "setup");
+        wizard.addStep(new MyStep(), "mystep");
         wizard.addStep(new ListenStep(), "listen");
         wizard.addStep(new LastStep(wizard), "last");
         wizard.setHeight("600px");
